@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "lint": "eslint '**/*.js'",
-    "test": "jest --verbose --coverage",
+    "test": "jest",
     "test-watch": "jest --watchAll --verbose --coverage",
     "jsdoc": "jsdoc -c ./docs/config/jsdoc.config.json"
   },
@@ -15,11 +15,12 @@
   "devDependencies": {
     "eslint": "^6.1.0",
     "eslint-plugin-react": "^7.14.3",
-    "jest": "^24.8.0"
+    "jest": "^24.9.0"
   },
   "dependencies": {
     "express": "^4.17.1",
     "is-url": "^1.2.4",
+    "jest-cli": "^26.0.1",
     "jsdoc": "^3.6.4",
     "minimist": "^1.2.5",
     "notes": "0.0.4"
