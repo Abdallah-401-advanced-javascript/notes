@@ -7,33 +7,37 @@ let myInputs = new Input();
 describe('Input Module', ()=> {
     
   it('getAdd() vaild case for payload', ()=> {
-    expect(myInputs.getAdd('hi').payload).toEqual('Adding Note: hi');
+    expect(myInputs.getAdd('hi').payload).toEqual('hi');
   });
-
   it('getAdd() vaild case for action', ()=> {
     expect(myInputs.getAdd('hi').action).toEqual('add');
   });
   it('getAdd() defaults to ERROR when there is no values', ()=> {
-    expect(myInputs.getAdd().payload).toEqual('Adding Note: Error: you can just use -a or --add');
+    expect(myInputs.getAdd().payload).toEqual('undefined');
   });
 
-  // it('getMethods() validating and using the proper methods', ()=> {
-  //     let options = new Input();
-  //     expect(options.getMethod('get')).toEqual('get');
-  //     expect(options.getMethod('post')).toEqual('post');
-  //     expect(options.getMethod('delete')).toEqual('delete');
-  //     expect(options.getMethod('put')).toEqual('put');
-  // });
 
-  // it('getUrl() returns undefned when it is invalid', ()=> {
-  //     let options = new Input();
-  //     expect(options.getUrl('google')).toBeUndefined();
-  // });
+  it('getList() vaild case for List', ()=> {
+    expect(myInputs.getList('hi')).toEqual('hi');
+  });
+  it('getList() error case for List', ()=> {
+    expect(myInputs.getList()).toEqual('error');
+  });
 
-  // it('getUrl() returns our url when it is properly formatted', ()=> {
-  //     let options = new Input();
-  //     let url = 'http://google.com';
-  //     expect(options.getUrl(url)).toEqual(url);
-  // });
+
+  it('getDelete() vaild case for delete', ()=> {
+    expect(myInputs.getDelete('id=123123123sad')).toEqual('id=123123123sad');
+  });
+  it('getDelete() error case for delete', ()=> {
+    expect(myInputs.getDelete()).toEqual('delete Error');
+  });
+
+
+  it('getCategory() vaild case for category', ()=> {
+    expect(myInputs.getCategory('mamoul')).toEqual('mamoul');
+  });
+  it('getCategory() Defult case for cotegory', ()=> {
+    expect(myInputs.getCategory()).toEqual('school');
+  });
 
 });
