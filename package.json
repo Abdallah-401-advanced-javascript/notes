@@ -10,7 +10,7 @@
     "test-watch": "jest --watchAll --verbose --coverage",
     "jsdoc": "jsdoc -c ./docs/config/jsdoc.config.json"
   },
-  "author": "John Cokos",
+  "author": "ِAbdallah",
   "license": "MIT",
   "devDependencies": {
     "eslint": "^6.1.0",
@@ -23,6 +23,7 @@
     "jest-cli": "^26.0.1",
     "jsdoc": "^3.6.4",
     "minimist": "^1.2.5",
+    "mongoose": "^5.9.15",
     "notes": "0.0.4"
   },
   "directories": {
