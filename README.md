@@ -7,7 +7,7 @@
 
 ### Links and Resources
 
-* [submission PR](https://github.com/Abdallah-401-advanced-javascript/notes/pull/2 )
+* [submission PR](https://github.com/Abdallah-401-advanced-javascript/notes/pull/5)
 * [travis](https://travis-ci.com/github/Abdallah-401-advanced-javascript/notes)
 * [ci/cd](https://github.com/Abdallah-401-advanced-javascript/notes/runs/690942657)
 <!-- - [back-end server url](http://xyz.com) (when applicable) -->
