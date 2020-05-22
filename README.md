@@ -7,9 +7,9 @@
 
 ### Links and Resources
 
-* [submission PR](https://github.com/Abdallah-401-advanced-javascript/notes/pull/5)
-* [travis](https://travis-ci.com/github/Abdallah-401-advanced-javascript/notes)
-* [ci/cd](https://github.com/Abdallah-401-advanced-javascript/notes/runs/690942657)
+* [submission PR](https://github.com/Abdallah-401-advanced-javascript/notes/pull/7)
+* [travis](https://github.com/Abdallah-401-advanced-javascript/notes/runs/700731604)
+* [ci/cd](https://github.com/Abdallah-401-advanced-javascript/notes/runs/700731624)
 <!-- - [back-end server url](http://xyz.com) (when applicable) -->
 <!-- * [front-end application](https://abdallah-lab-00.herokuapp.com/)  -->
 
@@ -17,13 +17,16 @@
 <!-- * [jsdoc](https://abdallah-lab-00.herokuapp.com/docs/) -->
 
 ### Modules
-#### `input.js` , `notes.js` , `notes-schema.js`
+#### `input.js` , `notes.js` , `notes-schema.js`, `notes-collection.js`
 ##### Exported Values and Methods
 
-###### `node index.js -a or --add"any text" ->any text saved `
-Return the text you that the client enter or error message if he did not enter anything or when use wrong flag.
+###### `node index.js -a/--add "any text" + -c/--category "anytext" ->any note saved `
+Save the note that the client enter or error message if he did not enter anything or when use wrong flag.
 We will test our code using `input.test.js` `notes.test.js`.
 Make a database and store or notes inside it and read from database and delete any note using the id. 
+###### `node index.js -l/--list "category"->list note by category from DB`
+###### `node index.js -l/--list ->list all notes from DB`
+###### `node index.js -d/--delete "_id" ->delete note by _id from DB`
 
 ### Setup
 
@@ -53,4 +56,4 @@ const DB_URI = 'mongodb://localhost:27017/firstDatabase';
 
 #### UML
 
-![UML Diagram](whiteboardclass03.jpg)
+![UML Diagram](whiteboardclass04.jpg)
