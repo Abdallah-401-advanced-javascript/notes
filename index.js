@@ -1,14 +1,11 @@
 #!/usr/bin/env node
 'use strict';
 const mongoose = require('mongoose');
-
 const Input = require('./lib/input.js');
 const Notes = require('./lib/notes.js');
-
 const DB_URI = 'mongodb://localhost:27017/firstDatabase';
 
 mongoose.connect(DB_URI, {  useNewUrlParser: true,  useUnifiedTopology: true});
-
 
 const myInputs = new Input();
 // {note:12321321,category:asdkhaslkdh,delete:MediaStreamAudioDestina, list:asdsad}
