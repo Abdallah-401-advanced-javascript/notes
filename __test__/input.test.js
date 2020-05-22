@@ -37,7 +37,7 @@ describe('Input Module', ()=> {
     expect(myInputs.getCategory('mamoul')).toEqual('mamoul');
   });
   it('getCategory() Defult case for cotegory', ()=> {
-    expect(myInputs.getCategory()).toEqual('school');
+    expect(myInputs.getCategory()).toEqual(undefined);
   });
 
 });

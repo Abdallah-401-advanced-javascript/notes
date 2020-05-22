@@ -11,7 +11,9 @@ mongoose.connect(DB_URI, {  useNewUrlParser: true,  useUnifiedTopology: true});
 
 
 const myInputs = new Input();
-const notes = new Notes();
+// {note:12321321,category:asdkhaslkdh,delete:MediaStreamAudioDestina, list:asdsad}
+const notes = new Notes();//notes.save(sadasdas)
+// {save():function,delete():function}
 if (myInputs.delete!=='delete Error') {
   notes.delete(myInputs.delete)
     .then(mongoose.disconnect);
@@ -29,6 +31,6 @@ else if (myInputs.list =='true'){
   help();
 }
 function help(){
-  console.log( ` api USAGE -m <method> -u <url> ..bodyheader` );
+  console.log( `Hint: You can use these args: -a/--add with -c/--category to save a note, -d "_id"/--delete "_id" to delete a note, -l/--list to list all the notes, -l/--list "category" to list elements from the same category` );
   process.exit();
 }
