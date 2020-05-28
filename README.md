@@ -7,7 +7,7 @@
 
 ### Links and Resources
 
-* [submission PR](https://github.com/Abdallah-401-advanced-javascript/notes/pull/11)
+* [submission PR](https://github.com/Abdallah-401-advanced-javascript/notes/pull/12)
 * [travis](https://github.com/Abdallah-401-advanced-javascript/notes/runs/700731604)
 * [ci/cd](https://github.com/Abdallah-401-advanced-javascript/notes/runs/700731624)
 <!-- - [back-end server url](http://xyz.com) (when applicable) -->
@@ -27,7 +27,7 @@ Make a database and store or notes inside it and read from database and delete a
 ###### `node index.js -l/--list "category"->list note by category from DB`
 ###### `node index.js -l/--list ->list all notes from DB`
 ###### `node index.js -d/--delete "_id" ->delete note by _id from DB`
-###### `node index.js -u/--update "_id" -a/--add "note" -c/--category "category" ->update note by _id from DB`
+###### `node index.js -u/--update "_id" -n/--note "note" ->update note by _id from DB`
 
 ### Setup
 
