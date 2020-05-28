@@ -20,13 +20,14 @@
 #### `input.js` , `notes.js` , `notes-schema.js`, `notes-collection.js`
 ##### Exported Values and Methods
 
-###### `node index.js -a/--add "any text" + -c/--category "anytext" ->any note saved `
+###### `node index.js -a/--add "any text"  -c/--category "anytext" ->any note saved `
 Save the note that the client enter or error message if he did not enter anything or when use wrong flag.
 We will test our code using `input.test.js` `notes.test.js`.
 Make a database and store or notes inside it and read from database and delete any note using the id. 
 ###### `node index.js -l/--list "category"->list note by category from DB`
 ###### `node index.js -l/--list ->list all notes from DB`
 ###### `node index.js -d/--delete "_id" ->delete note by _id from DB`
+###### `node index.js -u/--update "_id" -a/--add "note" -c/--category "category" ->update note by _id from DB`
 
 ### Setup
 
