@@ -15,17 +15,21 @@ const notes = new Notes();//notes.save(sadasdas)
 if (myInputs.delete!=='delete Error') {
   notes.delete(myInputs.delete)
     .then(mongoose.disconnect);
-}else if (myInputs.note.payload!=='undefined' && myInputs.update == undefined) {
+}
+else if (myInputs.note.payload!=='undefined' && myInputs.update == undefined) {
   notes.save(myInputs,'add')
     .then(mongoose.disconnect);
-}else if (myInputs.update!=='undefined') {
+}
+else if (myInputs.update!=='undefined' && !myInputs.list) {
   notes.update(myInputs)
     .then(mongoose.disconnect);
 }
 else if (myInputs.list =='true'){
+  // console.log(myInputs);
   notes.save(myInputs,'list')
     .then(mongoose.disconnect); 
 }else if (myInputs.list !=='true' && myInputs.list!=='error'){
+  // console.log(myInputs);
   notes.save(myInputs,'specList')
     .then(mongoose.disconnect);
 }else {
