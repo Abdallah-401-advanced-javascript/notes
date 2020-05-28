@@ -20,7 +20,8 @@ else if (myInputs.note.payload!=='undefined' && myInputs.update == undefined) {
   notes.save(myInputs,'add')
     .then(mongoose.disconnect);
 }
-else if (myInputs.update!=='undefined' && !myInputs.list) {
+else if (myInputs.update!=='undefined' && myInputs.list=='error') {
+  console.log(myInputs.list);
   notes.update(myInputs)
     .then(mongoose.disconnect);
 }
