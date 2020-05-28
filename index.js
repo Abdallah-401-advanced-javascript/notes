@@ -21,7 +21,7 @@ else if (myInputs.note.payload!=='undefined' && myInputs.update == undefined) {
     .then(mongoose.disconnect);
 }
 else if (myInputs.update!=='undefined' && myInputs.list=='error') {
-  console.log(myInputs.list);
+  // console.log(myInputs.list);
   notes.update(myInputs)
     .then(mongoose.disconnect);
 }
