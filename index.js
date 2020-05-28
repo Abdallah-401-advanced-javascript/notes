@@ -8,14 +8,18 @@ const DB_URI = 'mongodb://localhost:27017/firstDatabase';
 mongoose.connect(DB_URI, {  useNewUrlParser: true,  useUnifiedTopology: true});
 
 const myInputs = new Input();
+// console.log(myInputs);
 // {note:12321321,category:asdkhaslkdh,delete:MediaStreamAudioDestina, list:asdsad}
 const notes = new Notes();//notes.save(sadasdas)
 // {save():function,delete():function}
 if (myInputs.delete!=='delete Error') {
   notes.delete(myInputs.delete)
     .then(mongoose.disconnect);
-}else if (myInputs.note.payload!=='undefined') {
+}else if (myInputs.note.payload!=='undefined' && myInputs.update == undefined) {
   notes.save(myInputs,'add')
+    .then(mongoose.disconnect);
+}else if (myInputs.update!=='undefined') {
+  notes.update(myInputs)
     .then(mongoose.disconnect);
 }
 else if (myInputs.list =='true'){
